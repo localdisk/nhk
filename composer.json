@@ -3,9 +3,8 @@
   "type": "library",
   "description": "A simple API extension for NHK Program guide.",
   "keywords": [
-    "date",
-    "time",
-    "DateTime"
+    "NHK",
+    "API"
   ],
   "homepage": "https://github.com/localdisk/nhk",
   "license": "MIT",
