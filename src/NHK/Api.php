@@ -56,7 +56,7 @@ class Api
      */
     public function getInfo($area, $service, $id)
     {
-        $url = self::BASE_URL . "genre/{$area}/{$service}/{$id}.json";
+        $url = self::BASE_URL . "info/{$area}/{$service}/{$id}.json";
         return $this->send($url);
     }
 
@@ -81,7 +81,7 @@ class Api
      */
     private function send($url)
     {
-        $config = require './config.php';
+        $config = require __DIR__ . '/config.php';
         $key = $config['key'];
 
         $request = new Client($url . '{?key}', ['key' => $key]);
